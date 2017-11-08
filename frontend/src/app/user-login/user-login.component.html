@@ -1,0 +1,27 @@
+<div class="container" >
+    <div class="col-md-6">
+        <form role="form">
+            <legend>Login</legend>
+
+            <div class="form-group">
+                <label for="">Username</label>
+                <input type="text" class="form-control" id="user_name" name="user_name" [(ngModel)]="_user.user_name" >
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" class="form-control" id="user_name" name="password" [(ngModel)]="_user.password" >
+            </div>
+        </form>
+        <hr>
+        <button id="btn-login" class="btn btn-success" (click)="login(_user)">       Login      </button>
+      
+        <a  class="btn btn-success" [routerLink]="['/signup']" style="width:15em !important;" >       Signup      </a>
+          <br>
+
+    </div>
+</div>
+<div *ngIf="showMessage">
+<code>
+    Code Erreur :{{result.err}} <br>
+</code>
+</div>

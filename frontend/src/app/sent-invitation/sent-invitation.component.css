@@ -1,0 +1,10 @@
+.avatar{
+    width:50px;
+    padding:7px;
+    border-radius: 50%;
+}
+
+.avtar-container{
+    display: block;
+    float: left;
+}
